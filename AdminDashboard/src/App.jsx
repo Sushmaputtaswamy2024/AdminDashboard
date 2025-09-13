@@ -4,6 +4,7 @@ import Cards from './Components/molecules/Cards'
 import AddFile from './Components/molecules/AddFile'
 import AddPeople from './Components/molecules/AddPeople'
 import Display from './Components/organisms/Display'
+import LoginWrapper from './Components/organisms/LoginWrapper'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <Home /> */}
       {/* <AddFile /> */}
       {/* <AddPeople /> */}
-      <Display/>
+      {/* <Display/> */}
+      <LoginWrapper/>
     </div>
   )
 }

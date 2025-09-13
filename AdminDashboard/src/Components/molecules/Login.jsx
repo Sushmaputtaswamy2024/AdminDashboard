@@ -1,16 +1,14 @@
-import {useState} from 'react'
-import InputBox from '../atoms/InputBox'
+import React from 'react';
+import InputBox from '../atoms/InputBox';
 import Button from '../atoms/Button';
 import './Login.css'
 
-const Login = ({handleLogin}) => {
-
-    const[username, setUsername] = useState('');
-    const[password, setPassword] = useState('');
-
-    
+const Login = ({ handleLogin }) => {
+  const [username, setUsername] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
   return (
+<<<<<<< Updated upstream
     <>
     <div className='login'>
       <div className='body'>
@@ -23,5 +21,28 @@ const Login = ({handleLogin}) => {
     </>
   )
 }
+=======
+    <div>
+      <InputBox
+        className='username'
+        type='text'
+        placeholder='Username'
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <InputBox
+        className='password'
+        type='password'
+        placeholder='Password'
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button
+        className='login-button'
+        label='Login'
+        onClick={() => handleLogin(username, password)}
+      />
+    </div>
+  );
+};
+>>>>>>> Stashed changes
 
-export default Login
+export default Login;

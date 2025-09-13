@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from './Components/molecules/Login'
+import Home from './Components/templates/Home'
 
 const App = () => {
   return (
     <div>
-      <Login />
+      <Home />
     </div>
   )
 }

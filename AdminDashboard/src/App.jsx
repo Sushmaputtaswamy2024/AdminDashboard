@@ -1,19 +1,20 @@
-import React from 'react'
-import Home from './Components/templates/Home'
-import Cards from './Components/molecules/Cards'
-import AddFile from './Components/molecules/AddFile'
-import AddPeople from './Components/molecules/AddPeople'
-import Display from './Components/organisms/Display'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./Components/molecules/Login";
+import Dashboard from "./Components/pages/Dashborad";
+import People from "./Components/templates/PeopleList";
+import FileList from "./Components/templates/FileList";
+import Home from "./Components/templates/Home";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      {/* <Home /> */}
-      {/* <AddFile /> */}
-      {/* <AddPeople /> */}
-      <Display/>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/people" element={<People/>} />
+      <Route path="/files" element={<FileList />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

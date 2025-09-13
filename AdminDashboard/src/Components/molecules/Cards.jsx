@@ -12,6 +12,7 @@ const Cards = () => {
         <Card key={index} image={card.image} title={card.title} description={card.description} />
       ))}
     </div>
+    
   )
 }
 

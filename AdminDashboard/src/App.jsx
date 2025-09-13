@@ -5,6 +5,8 @@ import AddFile from './Components/molecules/AddFile'
 import AddPeople from './Components/molecules/AddPeople'
 import Display from './Components/organisms/Display'
 import LoginWrapper from './Components/organisms/LoginWrapper'
+import Navbar from './Components/organisms/Navbar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -13,7 +15,13 @@ const App = () => {
       {/* <AddFile /> */}
       {/* <AddPeople /> */}
       {/* <Display/> */}
-      <LoginWrapper/>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route/>
+      </Routes>
+      </BrowserRouter>
+      <Navbar/>
     </div>
   )
 }

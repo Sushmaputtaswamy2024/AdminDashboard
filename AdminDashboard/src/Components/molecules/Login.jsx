@@ -8,41 +8,17 @@ const Login = ({ handleLogin }) => {
   const [password, setPassword] = React.useState('');
 
   return (
-<<<<<<< Updated upstream
-    <>
-    <div className='login'>
+    <div>
+        <div className='login'>
       <div className='body'>
       <h1>Login </h1>
       <InputBox className='username' type='text' placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
       <InputBox className='password' type='password' placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
       <Button className='login-button' label='Login' onClick={() => handleLogin(username, password)} />
-      </div>
     </div>
-    </>
+    </div>
+    </div>
   )
 }
-=======
-    <div>
-      <InputBox
-        className='username'
-        type='text'
-        placeholder='Username'
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <InputBox
-        className='password'
-        type='password'
-        placeholder='Password'
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <Button
-        className='login-button'
-        label='Login'
-        onClick={() => handleLogin(username, password)}
-      />
-    </div>
-  );
-};
->>>>>>> Stashed changes
 
-export default Login;
+export default Login
